@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@all",  "@deleteerror2",  "@deviceerror1",  "@fuzz",  "@list",  "@login",  "@mobileoperators",  "@mobileoperatorserror1",  "@phone",  "@phone-address",  "@phone-addresserror2",  "@portabilityerror2",  "@post",  "@putdevice",  "@smstoken", ] ,
+        labels:  [ "@login", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  75.00,  42.86,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  83.33,  42.86,  83.33,  100.00, ]             },
+                data:  [ 100.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  25.00,  14.29,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  16.67,  14.29,  16.67,  0.00, ]             },
+                data:  [ 0.00, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00,  42.86,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  42.86,  0.00,  0.00, ]             },
+                data:  [ 0.00, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
+                data:  [ 0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             }
+                data:  [ 0.00, ]             }
         ]
     };
 
@@ -128,8 +128,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>serasa_api</td>
-            <td>12 Feb 2020, 13:32</td>
+      <td>claro-app</td>
+            <td>18 Feb 2020, 10:10</td>
     </tr>
   </tbody>
 </table>
@@ -191,91 +191,6 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-tag_2149486944.html">@all</a></td>
-
-        <td      class="passed"    >11</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="6479676406">6.479</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_302999764.html">@deleteerror2</a></td>
-
-        <td      class="passed"    >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="107473003">0.107</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_134976830.html">@deviceerror1</a></td>
-
-        <td      class="passed"    >6</td>
-        <td      class="failed"    >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td >0</td>
-        <td  class="failed"    >2</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="3600867480">3.600</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_2209744014.html">@fuzz</a></td>
-
-        <td      class="passed"    >3</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="303094787">0.303</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_2209911005.html">@list</a></td>
-
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="4586617582">4.586</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
         <td class="tagname"><a href="report-tag_4082898728.html">@login</a></td>
 
         <td      class="passed"    >12</td>
@@ -289,160 +204,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="8472774721">8.472</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_547580332.html">@mobileoperators</a></td>
-
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="3834973273">3.834</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_3139183381.html">@mobileoperatorserror1</a></td>
-
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="469266845">0.469</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_4086392109.html">@phone</a></td>
-
-        <td      class="passed"    >14</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">14</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="6757442988">6.757</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_1960105556.html">@phone-address</a></td>
-
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="3064731426">3.064</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_1050898878.html">@phone-addresserror2</a></td>
-
-        <td      class="passed"    >19</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">19</td>
-
-        <td  class="passed"    >3</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="478856747">0.478</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_560899506.html">@portabilityerror2</a></td>
-
-        <td      class="passed"    >5</td>
-        <td      class="failed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1469880477">1.469</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_2210035935.html">@post</a></td>
-
-        <td      class="passed"    >3</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="303094787">0.303</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_2465485284.html">@putdevice</a></td>
-
-        <td      class="passed"    >5</td>
-        <td      class="failed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="964549519">0.964</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_2350787711.html">@smstoken</a></td>
-
-        <td      class="passed"    >11</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="6479676406">6.479</td>
+        <td class="duration" data-value="1392258049">1.392</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
@@ -450,33 +212,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>123</td>
-      <td>6</td>
-      <td>6</td>
+      <td>12</td>
       <td>0</td>
       <td>0</td>
-      <td>135</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
 
-      <td>13</td>
-      <td>6</td>
-      <td>19</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
 
-      <td class="duration">47.372</td>
-      <td>15</td>
+      <td class="duration">1.392</td>
+      <td>1</td>
     </tr>
     <tr>
       <td></td>
-            <td>91.11%</td>
-      <td>4.44%</td>
-      <td>4.44%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>68.42%</td>
-      <td>31.58%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>66.67%</td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

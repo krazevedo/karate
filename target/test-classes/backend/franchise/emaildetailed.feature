@@ -2,10 +2,10 @@ Feature: Franquia
 
   Background:
 
-   * def result = callonce read('../../claroApp/authentication/signin.feature@login')
+   * def resultContract = callonce read('../../claroApp/user/contractlist.feature@list')
+   * header Authorization = 'Bearer ' + resultContract.idmtoken + '@' + resultContract.operatorcode + resultContract.contractnumber
    * def detailed = callonce read('../../claroApp/franchise/detailed.feature@detailed')
    * header X-Application-Key = gwappkey
-   * header Authorization = 'Bearer ' + result.idmToken + '@' + operatorcode + contractnumber
    * header Content-Type = 'application/json'
    * url franchiseUrl
 

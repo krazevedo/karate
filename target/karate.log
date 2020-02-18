@@ -10811,3 +10811,37 @@ javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
 {"protocolNumber":"052202590592431"}
 
 13:32:15.531 [pool-1-thread-3] INFO  com.intuit.karate.Runner - <<pass>> feature 3 of 3: classpath:backend/portability/phone.feature
+10:10:21.103 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @login
+10:10:21.838 [main] INFO  com.intuit.karate.Runner - Karate version: 0.9.2
+10:10:22.465 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > POST https://qa-gw.claro.com.br/authentication/v1/sign-in
+1 > Accept-Encoding: gzip,deflate
+1 > Cache-Control: no-cache
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > gw-app-key: e9e24b40c78e013762d7000d3ac06d76
+1 > x-application-key: 2251d8c0a94601364c54000d3ac06d76
+{"username":"Net.web","password":"Net.123"}
+
+10:10:23.618 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 1133,44
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json;charset=UTF-8
+1 < Server: ECD (spb/E517)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200216-01
+1 < cache-control: no-store, max-age=0
+1 < date: Tue, 18 Feb 2020 13:10:23 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: 8e0ff02bce1378f8e7a5faa48d534d584e1d62185f3b210942e5878a5f37c653
+1 < x-xss-protection: 1; mode=block
+{"userInfo":"ahLJVg2FzLA5R1tdLjWPtezG0kXKt1d/6fqBRwk+HeMB585oDLuy764jnYaSdBjTCiLsMLLXugpkAzGldPrTKS2bHx/doPVmPoDJqc3o0lDSnkHZ0sur3Lr9Ps+qu4mQVjm4wk3+qPc7alSL9iycCt0D8DCGIB0BMd36gkt7S+VMh6QJ2CpE6lbIzu7AHFPiYBTmGHVFIyq7gvACOaf+FPF3fDrPJp3WJUkg3Q5EfVDutHwlgQu81qRmG5quaWqb5c1RRo8nQfHQAGrAbxA+iSEqVZs0GDJSqx1eF8ntByh9eiHfRywv0Z5D9aFV1GygrH8r4qP/1nUiYzq04a+3uYuSp/atDKt7WCZfNiCufExh8zDQ7bouon56Dn429QDzvqFgKwrcS9E2a+eSqiX7/5hkVtr6b4m1X+HTEe0ecGpGyiKXMlTnmdEjq3/dCGvUhH1+i2iT15wNyQfJtojhu7I80m6E/nd6BpO5a0kpC2bAkMMmtYvi+cw+d/gzP8E2esXXjINdyylbtOpzmXRkPnS9+ts+fckrQYjV0t2Vm6JZvH2j0tsRnHKpHcO7bt3Jllvgf80Qb9lgPpkTeXZLE0Tw+kfAwkZWHXOPq2yP7HPZWe22l73RDM016wYlaiSC1RsEwHLfJPP8LMAq7HvZIUT7JwRXq9b8HrrWLBwSYz3l5YKyRpEYYQkS5iBDW02K4FGHD6PObsdC+5KdCvwVPOt0DBQWKOuveCa5PoGeYa5rcltFdU2t6FbK7O6w6jKB6I8o5FJf4L9daMWkcdbtauJzecpyC5f4X7lOX0P3uvYGTMpMT0jgDaIsXhlgodowz3rfbvBtYCXPnznmljcZiAM0dFR7MOVuU62tgWiHZWvnORwKRV3vk4/eUKDB9qjGUcPyx5Ya5hFZRjMiHpkglJdKPAqvZO7Ck01CI58PrX46TXy5jhgthMh6YpnuHWzc","idmToken":"fa6f45006ef4626e","idmSID":"29e90e43a8ef3057"}
+
+10:10:23.836 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 4: classpath:claroApp/authentication/signin.feature

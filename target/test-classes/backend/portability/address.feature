@@ -2,8 +2,8 @@ Feature: Portabilidade
 
   Background:
 
-   * def result = callonce read('../../claroApp/authentication/signin.feature@login') { username: 'Net.web', password: 'Net.123' }
-   * header Authorization = 'Bearer ' + result.idmToken + '@' + '003' + '349338695'
+   * def resultContract = callonce read('../../claroApp/user/contractlist.feature@list')
+   * header Authorization = 'Bearer ' + resultContract.idmtoken + '@' + resultContract.operatorcode + resultContract.contractnumber
    * header X-Application-Key = gwappkey
    * header Content-Type = 'application/json'
    * header origin = 'API'
