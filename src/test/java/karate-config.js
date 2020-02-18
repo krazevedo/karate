@@ -63,7 +63,7 @@ function() {
         config.gwappkey = 'e9e24b40c78e013762d7000d3ac06d76'
         config.xappkey = '2251d8c0a94601364c54000d3ac06d76'
         config.password =  'Net.123'
-        config.document = '36512468848'
+        config.document = 'Net.web'
         config.username = '36512468848'
         config.partneraccountkey = 'WmZq4t7w!z%C&F)J'
         config.partneraccount = 'NETAPPNOVO'
