@@ -1,0 +1,30 @@
+11:34:28.155 this thread waited 2101 milliseconds for callonce lock: read('../../claroApp/authentication/signin.feature@login')
+11:34:28.177 request:
+1 > GET https://qa-gw.claro.com.br/resource-order-portability/v1/phone-address
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 1a115969760e79f3@003349338695
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: e9e24b40c78e013762d7000d3ac06d76
+1 > origin: API
+
+11:34:28.325 response time in milliseconds: 103,25
+1 < 405
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 12 Feb 2020 13:34:28 GMT
+1 < Server: ECD (spb/E563)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < access-control-allow-origin: *
+1 < cache-control: no-store, max-age=0
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: 00e483bfa93c4003e48f7f204ace376916475c93c8d89c221bfdd5924bdccbe7
+1 < x-xss-protection: 1; mode=block
+{"statusCode":405,"error":"Method Not Allowed","message":"Resource Method not found"}
+

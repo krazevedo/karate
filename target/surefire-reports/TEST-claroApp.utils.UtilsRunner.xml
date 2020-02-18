@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="1" name="claroApp.utils.UtilsRunner" time="3.831" errors="0" skipped="0">
+  <properties>
+    <property name="karate.options" value="--tags @post"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.2+9-LTS"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-oracle/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/kaio.azevedo/Claro/claro-app-automation-test-api"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="claroApp.utils.UtilsRunner"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/kaio.azevedo/Claro/claro-app-automation-test-api"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.2+9-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/opt/apache-maven-3.6.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/opt/apache-maven-3.6.0/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-58-generic"/>
+    <property name="library.jansi.path" value="/opt/apache-maven-3.6.0/lib/jansi-native"/>
+    <property name="user.home" value="/home/kaio.azevedo"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="kaio.azevedo"/>
+    <property name="java.class.path" value="/opt/apache-maven-3.6.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dkarate.options=--tags @post -Dtest=claroApp.utils.UtilsRunner"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-oracle"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/apache-maven-3.6.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="claroApp.utils.UtilsRunner" name="testParallel" time="3.831">
+    <failure message="failed features:
+claroApp.utils.fuzz: fuzz.feature:35 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1] failed: Conexão recusada (Connection refused)
+" type="java.lang.AssertionError">java.lang.AssertionError: failed features:
+claroApp.utils.fuzz: fuzz.feature:35 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1] failed: Conexão recusada (Connection refused)
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at claroApp.utils.UtilsRunner.testParallel(UtilsRunner.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>16:41:07.228 [main] INFO  com.intuit.karate.RunnerOptions - found system property &apos;karate.options&apos;: --tags @post
+16:41:08.327 [main] INFO  com.intuit.karate.Runner - Karate version: 0.9.2
+16:41:09.072 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 &gt; POST http://localhost:3000/scans
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 347
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Cookie: _Fuzzer-app_session=WFM4dFVOV1BkQXlnRUk0enRaa2VEUEo4aTlKZW5mZWpNcXhSM0RyVVJNWWI3bzB1RDZ2MmxJZS83V2JpK1FUcEpjNThMem5Hc2NwZjA2YTdmdnlTQ1NmbEtyQnhnY0xvbnFTSDJaODlXR2M2cUxVeGJFdU9PSktuRWk1NHFUaDVBRTkyNjBUamRDTHZRTEFLMTF6cEZ3enBTdGF5YWRobGJSUk00LzNGU1ZHeTVWZHNkRWhtMVNTaW1iaUExRU0vajI4V09UVGwyTXNOUUJRdVJhbjluSWlRV1FPcGM4Q05OVTR1UXlFQ1hGTT0tLURBRnlHaTQySnNScHdSbVpYSllTWXc9PQ%3D%3D--304969adcb2836e9f8637df442812c69c2face4c; sessions=%7B%7D
+1 &gt; Host: localhost:3000
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+authenticity_token=kxSQJ57VgXYXLNmsmBYyJU%2BPgasOaYlLCZmQx1prtOi%2B2b7slSx%2F3YjUeoKCa4tg1jyMeIUTS6%2BFCPiowaX8xA%3D%3D&amp;url=https%3A%2F%2Fclaro.dev.gateway.zup.me%2Fecare-cms%2Fv1%2Fmenu&amp;method%5B%5D=GET&amp;headers=x-application-key%3A+%272251d8c0a94601364c54000d3ac06d76%27&amp;cityCode=undefined&amp;parameters=gw-app-key%3D2251d8c0a94601364c54000d3ac06d76
+
+16:41:09.103 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1] failed: Conexão recusada (Connection refused), http call failed after 30 milliseconds for URL: http://localhost:3000/scans
+16:41:09.103 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1] failed: Conexão recusada (Connection refused)
+16:41:09.357 [pool-1-thread-1] INFO  com.intuit.karate.Runner - &lt;&lt;fail&gt;&gt; feature 2 of 5: classpath:claroApp/utils/fuzz.feature
+---------------------------------------------------------
+feature: classpath:claroApp/utils/fuzz.feature
+report: target/surefire-reports/claroApp.utils.fuzz.json
+scenarios:  1 | passed:  0 | failed:  1 | time: 0,3464
+---------------------------------------------------------
+Karate version: 0.9.2
+======================================================
+elapsed:   1,04 | threads:    1 | thread time: 0,35 
+features:     1 | ignored:    4 | efficiency: 0,33
+scenarios:    1 | passed:     0 | failed: 1
+======================================================
+failed features:
+claroApp.utils.fuzz: fuzz.feature:35 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1] failed: Conexão recusada (Connection refused)
+
+</system-out>
+    <system-err>Warning: Nashorn engine is planned to be removed from a future JDK release
+Jan 29, 2020 4:41:09 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File &apos;/home/kaio.azevedo/Claro/claro-app-automation-test-api/target/surefire-reports/claroApp.inventory.devicemanagement.json&apos; contains 1 features
+Jan 29, 2020 4:41:09 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File &apos;/home/kaio.azevedo/Claro/claro-app-automation-test-api/target/surefire-reports/claroApp.inventory.deletedevice.json&apos; contains 1 features
+Jan 29, 2020 4:41:09 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File &apos;/home/kaio.azevedo/Claro/claro-app-automation-test-api/target/surefire-reports/claroApp.authentication.signin.json&apos; contains 1 features
+Jan 29, 2020 4:41:09 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File &apos;/home/kaio.azevedo/Claro/claro-app-automation-test-api/target/surefire-reports/backend.security.security.json&apos; contains 1 features
+Jan 29, 2020 4:41:09 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File &apos;/home/kaio.azevedo/Claro/claro-app-automation-test-api/target/surefire-reports/claroApp.inventory.putdevice.json&apos; contains 1 features
+Jan 29, 2020 4:41:09 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File &apos;/home/kaio.azevedo/Claro/claro-app-automation-test-api/target/surefire-reports/claroApp.utils.fuzz.json&apos; contains 1 features
+</system-err>
+  </testcase>
+</testsuite>

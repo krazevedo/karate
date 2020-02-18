@@ -1,0 +1,34 @@
+10:33:46.637 >> lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+10:33:47.995 << lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')
+10:33:48.011 request:
+1 > POST https://qa-gw.claro.com.br/resource-order-portability/v1/phone-address
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 72d0f6f28d2108f7@003349338695
+1 > Connection: Keep-Alive
+1 > Content-Length: 319
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: e9e24b40c78e013762d7000d3ac06d76
+1 > origin: API
+{"mobileOperatorIdentifier":81,"cellphoneNumber":11990101010,"netPhoneNumber":11910101010,"isHolder":true,"clientIP":"192.0.0.1","clientEmail":"","clientName":"","clientAddress":"","clientPostalCode":"13333-111","clientNeighborhood":"","clientState":"SP","clientCity":"","requestURI":"a","username":"Teste","cityId":81}
+
+10:33:48.996 response time in milliseconds: 980,25
+1 < 400
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Server: ECD (spb/E563)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: no-store, max-age=0
+1 < date: Tue, 11 Feb 2020 12:33:48 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: c7544991804676bde3cf053040e838530a83a8ca5dadafa5277f6f2d4e2f66c7
+1 < x-xss-protection: 1; mode=block
+{"statusCode":"400","status":"Bad Request","description":"clientAddress: Parâmetro ausente ou fora do padrão!"}
+
+10:33:48.999 assertion failed: path: $.description, actual: 'clientAddress: Parâmetro ausente ou fora do padrão!', expected: 'cityId: Parâmetro ausente ou fora do padrão!', reason: not equal

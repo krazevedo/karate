@@ -1,0 +1,16 @@
+11:33:39.768 this thread waited 1437 milliseconds for callonce lock: read('../../claroApp/authentication/signin.feature@login')
+11:33:39.785 request:
+1 > PUT https://qa-gw.claro.com.br/resource-inventory/v1/device-management
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer b517305cd1f6d6ec
+1 > Connection: Keep-Alive
+1 > Content-Length: 64
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: 2251d8c0a94601364c54000d3ac06d76
+{"deviceId":"MDA6MDU6MTY6NTk6ZjE6NjM%3D","deviceName":"Windows"}
+
+11:33:39.810 javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated, http call failed after 24 milliseconds for URL: https://qa-gw.claro.com.br/resource-inventory/v1/device-management
+11:33:39.811 http request failed: 
+javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated

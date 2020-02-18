@@ -1,0 +1,16 @@
+<testsuite failures="1" name="claroApp/inventory/devicemanagement.feature" skipped="0" tests="1" time="3.119733">
+  <testcase classname="claroApp.inventory.devicemanagement" name="Validar erro ao enviar documento inválido" time="3.119733">
+    <failure message="devicemanagement.feature:37 - status code was: 200, expected: 404, response time: 1781, url: https://qa-gw.claro.com.br/resource-inventory/v1/device-management, response: []">* def result = callonce read('../../claroApp/authentication/signin.feature@login') . passed
+* header Authorization = 'Bearer ' + result.idmToken ...................... passed
+* header X-Application-Key = xappkey ...................................... passed
+* url inventoryUrl ........................................................ passed
+* header document = 'adasdasdasdassdsa' ................................... passed
+Given path 'device-management' ............................................ passed
+When method get ........................................................... passed
+Then status 404 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: devicemanagement.feature:37 - status code was: 200, expected: 404, response time: 1781, url: https://qa-gw.claro.com.br/resource-inventory/v1/device-management, response: []
+	at ✽.Then status 404 (devicemanagement.feature:37)</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,34 @@
+13:32:06.882 scenario called at line: 12 by tag: @login
+13:32:07.270 request:
+1 > POST https://qa-gw.claro.com.br/authentication/v1/sign-in
+1 > Accept-Encoding: gzip,deflate
+1 > Cache-Control: no-cache
+1 > Connection: Keep-Alive
+1 > Content-Length: 47
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > gw-app-key: e9e24b40c78e013762d7000d3ac06d76
+1 > x-application-key: 2251d8c0a94601364c54000d3ac06d76
+{"username":"36512468848","password":"Net.123"}
+
+13:32:08.554 response time in milliseconds: 1271,97
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json;charset=UTF-8
+1 < Server: ECD (spb/E517)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: no-store, max-age=0
+1 < date: Wed, 12 Feb 2020 15:32:08 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: c972c232ff83139dd12c40eef20fa1a2ee510270de9782e7aeeec217974a7b36
+1 < x-xss-protection: 1; mode=block
+{"userInfo":"ahLJVg2FzLA5R1tdLjWPtT/+L8iS7oVlMYh7zFtL1QP8Jiop/u/VCoWpX/SdKk4/gmkQlOsUbeWp9Psejj2acOP1EqIO1oCAbKpOiP7LPRkos4aZh7OjUZxOzR/ZKm3w/l/Igrit20XIJaIhQThy+WNgdC5kpf/VEdUj24aFS460b4BHlJPNfTqBzN9R6FtxM8vOVPg1RnxzE7yrLggDce/VbRCUUslK7AZOXItXGFnBO8EoIIVdhMMMT7qdzxHnS3kNGDmsbzgtJP6FhehF4Dtj1ylh8+dBWZqDoW8Tn5eUkrP6j+G/g7hDrDmZr4Fk2DlFhmLUGqSrPZtNi0Dkv8OL9npsW8gwJdKnhfh+SEzaLhYK2f9E4DBNFf2fjMeGMd8gKDSi8vltEASobAWGoaA1uLoCuBnODCtJNzpJ6XyY+ZAww2w/O0IGN05yaeRQ+YRvEEXG+94WCUqOUzyjObDED07LtOY2FW7U3SEQQffdRA04drupEXjPtKZPKCneyTYAXrznCPoC+7oQ8Tm+szyan4BR4PdFKXpajuGMO+XyJf04QDKfnNXBQM5Ssu9bWFAJ2bFXoH8hOGs0eeTC5UFSMmWXIuTlp77HVpoA5wfSM7Y1DfUrutJoavSZVRLT2lSBYhXV4P7yVdaWs4roMVOpfuTaYCXNjxL5eCxngoXrQ7YLMfAsSy5EhLTd5MY1thKWa3/O9anxD+XFUuKOlLf1pilN4S0CUe6u9AIiWK99XPv8+xuHbIM0MncQqqi2IqSk4a8TbhwacRrNQDNSeg==","idmToken":"7d1a98ac50d30d0e","idmSID":"4e4a029847d1b4e9"}
+
+R7MOVuU62tgWiHZWvnORwKRV3vk4/eUKDB9qjGUcPyx5Ya5hFZRjMiHpkglJdKPAqvZO7Ck01CI58PrX46TXy5jhgthMh6YpnuHWzc","idmToken":"b9aac966b64342c6","idmSID":"c59f22c5cc4e7a57"}
+

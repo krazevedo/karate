@@ -1,0 +1,39 @@
+11:15:38.606 >> lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+11:15:40.059 << lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')
+11:15:40.074 request:
+1 > POST https://qa-gw.claro.com.br/resource-order-portability/v1/phone-address
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer b096e29a5405429f@003349338695
+1 > Connection: Keep-Alive
+1 > Content-Length: 398
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: e9e24b40c78e013762d7000d3ac06d76
+1 > origin: API
+{"mobileOperatorIdentifier":81,"cellphoneNumber":11990101010,"netPhoneNumber":11910101010,"isHolder":true,"clientIP":"192.0.0.1","clientEmail":"teste@teste.com","clientName":"Teste Name","clientAddress":"Rua rua","clientPostalCode":"13333-111","clientNeighborhood":"Bairro","clientState":"SP","clientCity":"São Paulo","requestURI":"a","username":"Teste","cityId":821212121212122122121212121212111}
+
+11:15:41.248 response time in milliseconds: 1166,91
+1 < 400
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Server: ECD (spb/E563)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: no-store, max-age=0
+1 < date: Tue, 11 Feb 2020 13:15:40 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: 4a012f1a96414fb8d3e30cf9f1696c083933e049ca09254f861d6f6ed1bbe37d
+1 < x-xss-protection: 1; mode=block
+{"statusCode":"400","status":"Bad Request","description":"JSON parse error: Numeric value (821212121212122122121212121212111) out of range of long (-9223372036854775808 - 9223372036854775807); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Numeric value (821212121212122122121212121212111) out of range of long (-9223372036854775808 - 9223372036854775807)\n at [Source: (PushbackInputStream); line: 1, column: 365] (through reference chain: com.claro.ecare.api.portability.dto.RequestPhoneAddressPortabilityDTO[\"cityId\"])"}
+
+11:15:41.252 assertion failed: path: $.description, actual: 'JSON parse error: Numeric value (821212121212122122121212121212111) out of range of long (-9223372036854775808 - 9223372036854775807); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Numeric value (821212121212122122121212121212111) out of range of long (-9223372036854775808 - 9223372036854775807)
+ at [Source: (PushbackInputStream); line: 1, column: 365] (through reference chain: com.claro.ecare.api.portability.dto.RequestPhoneAddressPortabilityDTO["cityId"])', expected: 'clientNeighborhood: Parâmetro ausente ou fora do padrão!', reason: not equal
+(through reference chain: com.claro.ecare.api.portability.dto.RequestPhoneAddressPortabilityDTO[\"cityId\"])"}
+
+11:10:23.528 assertion failed: path: $.description, actual: 'JSON parse error: Numeric value (13221312321231231321) out of range of long (-9223372036854775808 - 9223372036854775807); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Numeric value (13221312321231231321) out of range of long (-9223372036854775808 - 9223372036854775807)
+ at [Source: (PushbackInputStream); line: 1, column: 1157] (through reference chain: com.claro.ecare.api.portability.dto.RequestPhoneAddressPortabilityDTO["cityId"])', expected: 'clientNeighborhood: Parâmetro ausente ou fora do padrão!', reason: not equal

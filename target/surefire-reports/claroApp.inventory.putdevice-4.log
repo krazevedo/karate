@@ -1,0 +1,31 @@
+11:33:39.846 request:
+1 > PUT https://qa-gw.claro.com.br/resource-inventory/v1/device-management
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer b517305cd1f6d6ec
+1 > Connection: Keep-Alive
+1 > Content-Length: 64
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: suhdsauhiuasduahsiuh
+1 > document: 36512468848
+{"deviceId":"MDA6MDU6MTY6NTk6ZjE6NjM%3D","deviceName":"Windows"}
+
+11:33:39.963 response time in milliseconds: 68,55
+1 < 403
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 10 Feb 2020 13:33:40 GMT
+1 < Server: ECD (spb/E4A2)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: no-store, max-age=0
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: 2b27e8b69ff8e152bd90136b06ef5497f0827ca8f4cc914362fa129829b6920c
+1 < x-xss-protection: 1; mode=block
+{"statusCode":403,"error":"Forbidden","message":"Application key is not allowed to call this resource method"}
+

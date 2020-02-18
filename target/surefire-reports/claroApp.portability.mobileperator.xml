@@ -1,0 +1,12 @@
+<testsuite failures="0" name="claroApp/portability/mobileperator.feature" skipped="0" tests="1" time="3.835197">
+  <testcase classname="claroApp.portability.mobileperator" name="Validar lista de operadoras" time="3.835197">
+    <system-out>* header X-Application-Key = gwappkey ..................................... passed
+* url portabilityUrl ...................................................... passed
+* def responseApi = ....................................................... passed
+Given path 'mobile-operators' ............................................. passed
+And param cityId = '1' .................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == responseApi ......................................... passed</system-out>
+  </testcase>
+</testsuite>

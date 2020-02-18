@@ -1,0 +1,30 @@
+11:10:06.510 >> lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+11:10:07.840 << lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')
+11:10:07.854 request:
+1 > GET https://qa-gw.claro.com.br/resource-inventory/v1/device-management
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 7d92f3814bc38627
+1 > Connection: Keep-Alive
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: auhdaiuhdaiuhds
+1 > document: 36512468848
+
+11:10:07.946 response time in milliseconds: 50,57
+1 < 403
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Jan 2020 13:10:06 GMT
+1 < Server: ECD (spb/E4A2)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200123-03
+1 < cache-control: no-store, max-age=0
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: ee1bed3c443a2a9e260183eae2e00ccaef9925cb20ed46a668325f58cee3cf10
+1 < x-xss-protection: 1; mode=block
+{"statusCode":403,"error":"Forbidden","message":"Application key is not allowed to call this resource method"}
+

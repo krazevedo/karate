@@ -1,0 +1,27 @@
+13:29:24.725 request:
+1 > GET https://dev-gw.claro.com.br/resource-order-portability/v1/mobile-operators?cityId=
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dev-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: e9e24b40c78e013762d7000d3ac06d76
+
+13:29:25.918 response time in milliseconds: 1175,67
+1 < 500
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Server: ECD (spb/E563)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: no-store, max-age=0
+1 < date: Mon, 10 Feb 2020 15:29:26 GMT
+1 < strict-transport-security: max-age=15768000
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: b36505754d0bb078285e5d9d438a09be88be1c40c1960e951c778ec20f39985e
+1 < x-xss-protection: 1; mode=block
+{"statusCode":"500","status":"Internal Server Error","description":"HV000028: Unexpected exception during isValid call."}
+
+13:29:25.920 status code was: 500, expected: 400, response time: 1176, url: https://dev-gw.claro.com.br/resource-order-portability/v1/mobile-operators?cityId=, response: {"statusCode":"500","status":"Internal Server Error","description":"HV000028: Unexpected exception during isValid call."}

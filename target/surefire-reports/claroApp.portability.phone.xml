@@ -1,0 +1,17 @@
+<testsuite failures="0" name="claroApp/portability/phone.feature" skipped="0" tests="1" time="5.301606">
+  <testcase classname="claroApp.portability.phone" name="Validar criação de portabilidade" time="5.301606">
+    <system-out>* def result = callonce read('../../claroApp/authentication/signin.feature@login') { username: 'Net.web', password: 'Net.123' } . passed
+* header Authorization = 'Bearer ' + result.idmToken + '@' + '003' + '349338695' . passed
+* header X-Application-Key = gwappkey ..................................... passed
+* header Content-Type = 'application/json' ................................ passed
+* header origin = 'API' ................................................... passed
+* url portabilityUrl ...................................................... passed
+* def body = .............................................................. passed
+* def responseApi = ....................................................... passed
+Given path 'phone' ........................................................ passed
+And request body .......................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == responseApi ......................................... passed</system-out>
+  </testcase>
+</testsuite>

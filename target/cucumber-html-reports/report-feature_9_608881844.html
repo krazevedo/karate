@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: backend/portability/phone.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>serasa_api</td>
+            <td>12 Feb 2020, 13:32</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">backend/portability/phone.feature</td>
+          <td      class="passed"    >49</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">49</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="15329326952">15.329</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">backend/portability/phone.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Portabilidade</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">11.817</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def resultContract = callonce read('../../claroApp/user/contractlist.feature@list')</span>
+  
+  <span class="lead-duration duration">5.074</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>13:32:06.841 &gt;&gt; lock acquired, begin callonce: read('../../claroApp/user/contractlist.feature@list')
+13:32:11.914 &lt;&lt; lock released, cached callonce: read('../../claroApp/user/contractlist.feature@list')</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">../../claroApp/user/contractlist.feature</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def result = callonce read('../../claroApp/authentication/signin.feature@login')</span>
+  
+  <span class="lead-duration duration">1.723</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>13:32:06.861 scenario called at line: 14 by tag: @list
+13:32:06.866 &gt;&gt; lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+13:32:08.589 &lt;&lt; lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">../../claroApp/authentication/signin.feature</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>13:32:06.882 scenario called at line: 12 by tag: @login</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header x-application-key = xappkey</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header gw-app-key = gwappkey</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header Cache-Control = 'no-cache'</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">url authenticationUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def body =</span>
+  
+  <span class="lead-duration duration">0.037</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>{
+    &quot;username&quot;: &quot;&lt;username&gt;&quot;,
+    &quot;password&quot;: &quot;&lt;password&gt;&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">replace body.username = username</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">replace body.password = password</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def responseApi =</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>{
+  userInfo: '#string',
+  idmToken: '#string',
+  idmSID: '#string'
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">path 'sign-in'</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">request body</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">1.613</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>13:32:07.270 request:
+1 &gt; POST https://qa-gw.claro.com.br/authentication/v1/sign-in
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Cache-Control: no-cache
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 47
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: qa-gw.claro.com.br
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 &gt; gw-app-key: e9e24b40c78e013762d7000d3ac06d76
+1 &gt; x-application-key: 2251d8c0a94601364c54000d3ac06d76
+{&quot;username&quot;:&quot;36512468848&quot;,&quot;password&quot;:&quot;Net.123&quot;}
+
+13:32:08.554 response time in milliseconds: 1271,97
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Server: ECD (spb/E517)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Policy: 200205-02
+1 &lt; cache-control: no-store, max-age=0
+1 &lt; date: Wed, 12 Feb 2020 15:32:08 GMT
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: accept-encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: DENY
+1 &lt; x-request-id: c972c232ff83139dd12c40eef20fa1a2ee510270de9782e7aeeec217974a7b36
+1 &lt; x-xss-protection: 1; mode=block
+{&quot;userInfo&quot;:&quot;ahLJVg2FzLA5R1tdLjWPtT/+L8iS7oVlMYh7zFtL1QP8Jiop/u/VCoWpX/SdKk4/gmkQlOsUbeWp9Psejj2acOP1EqIO1oCAbKpOiP7LPRkos4aZh7OjUZxOzR/ZKm3w/l/Igrit20XIJaIhQThy+WNgdC5kpf/VEdUj24aFS460b4BHlJPNfTqBzN9R6FtxM8vOVPg1RnxzE7yrLggDce/VbRCUUslK7AZOXItXGFnBO8EoIIVdhMMMT7qdzxHnS3kNGDmsbzgtJP6FhehF4Dtj1ylh8+dBWZqDoW8Tn5eUkrP6j+G/g7hDrDmZr4Fk2DlFhmLUGqSrPZtNi0Dkv8OL9npsW8gwJdKnhfh+SEzaLhYK2f9E4DBNFf2fjMeGMd8gKDSi8vltEASobAWGoaA1uLoCuBnODCtJNzpJ6XyY+ZAww2w/O0IGN05yaeRQ+YRvEEXG+94WCUqOUzyjObDED07LtOY2FW7U3SEQQffdRA04drupEXjPtKZPKCneyTYAXrznCPoC+7oQ8Tm+szyan4BR4PdFKXpajuGMO+XyJf04QDKfnNXBQM5Ssu9bWFAJ2bFXoH8hOGs0eeTC5UFSMmWXIuTlp77HVpoA5wfSM7Y1DfUrutJoavSZVRLT2lSBYhXV4P7yVdaWs4roMVOpfuTaYCXNjxL5eCxngoXrQ7YLMfAsSy5EhLTd5MY1thKWa3/O9anxD+XFUuKOlLf1pilN4S0CUe6u9AIiWK99XPv8+xuHbIM0MncQqqi2IqSk4a8TbhwacRrNQDNSeg==&quot;,&quot;idmToken&quot;:&quot;7d1a98ac50d30d0e&quot;,&quot;idmSID&quot;:&quot;4e4a029847d1b4e9&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response == responseApi</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">def idmToken = response.idmToken</span>
+  
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">def userInfo = response.userInfo</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">def idmSID = response.idmSID</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header userInfo = java.net.URLEncoder.encode(result.userInfo, 'UTF-8')</span>
+  
+  <span class="lead-duration duration">0.031</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header x-application-key = xappkey</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header gw-app-key = gwappkey</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Cache-Control = 'no-cache'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url userUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseApi =</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>{
+  contracts: '#[]? _.length == 4'
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'contract'</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">3.233</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>13:32:08.629 request:
+1 &gt; GET https://qa-gw.claro.com.br/user/v1/contract
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Cache-Control: no-cache
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: qa-gw.claro.com.br
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 &gt; gw-app-key: e9e24b40c78e013762d7000d3ac06d76
+1 &gt; userInfo: ahLJVg2FzLA5R1tdLjWPtT%2F%2BL8iS7oVlMYh7zFtL1QP8Jiop%2Fu%2FVCoWpX%2FSdKk4%2FgmkQlOsUbeWp9Psejj2acOP1EqIO1oCAbKpOiP7LPRkos4aZh7OjUZxOzR%2FZKm3w%2Fl%2FIgrit20XIJaIhQThy%2BWNgdC5kpf%2FVEdUj24aFS460b4BHlJPNfTqBzN9R6FtxM8vOVPg1RnxzE7yrLggDce%2FVbRCUUslK7AZOXItXGFnBO8EoIIVdhMMMT7qdzxHnS3kNGDmsbzgtJP6FhehF4Dtj1ylh8%2BdBWZqDoW8Tn5eUkrP6j%2BG%2Fg7hDrDmZr4Fk2DlFhmLUGqSrPZtNi0Dkv8OL9npsW8gwJdKnhfh%2BSEzaLhYK2f9E4DBNFf2fjMeGMd8gKDSi8vltEASobAWGoaA1uLoCuBnODCtJNzpJ6XyY%2BZAww2w%2FO0IGN05yaeRQ%2BYRvEEXG%2B94WCUqOUzyjObDED07LtOY2FW7U3SEQQffdRA04drupEXjPtKZPKCneyTYAXrznCPoC%2B7oQ8Tm%2Bszyan4BR4PdFKXpajuGMO%2BXyJf04QDKfnNXBQM5Ssu9bWFAJ2bFXoH8hOGs0eeTC5UFSMmWXIuTlp77HVpoA5wfSM7Y1DfUrutJoavSZVRLT2lSBYhXV4P7yVdaWs4roMVOpfuTaYCXNjxL5eCxngoXrQ7YLMfAsSy5EhLTd5MY1thKWa3%2FO9anxD%2BXFUuKOlLf1pilN4S0CUe6u9AIiWK99XPv8%2BxuHbIM0MncQqqi2IqSk4a8TbhwacRrNQDNSeg%3D%3D
+1 &gt; x-application-key: 2251d8c0a94601364c54000d3ac06d76
+
+13:32:11.860 response time in milliseconds: 3225,94
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Server: ECD (spb/E4A2)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Policy: 200205-02
+1 &lt; cache-control: no-store, max-age=0
+1 &lt; date: Wed, 12 Feb 2020 15:32:11 GMT
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: accept-encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: DENY
+1 &lt; x-request-id: ac4fe9239da0f1f7a0b98cd69959dd9ed4831a65417916e6a4b81abb57c54e5a
+1 &lt; x-xss-protection: 1; mode=block
+{&quot;contracts&quot;:[{&quot;contractNumber&quot;:&quot;019181308&quot;,&quot;operatorCode&quot;:&quot;052&quot;,&quot;addresses&quot;:[],&quot;customerUno&quot;:false}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response == responseApi</span>
+  
+  <span class="lead-duration duration">0.024</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def contractnumber = response.contracts[0].contractNumber</span>
+  
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def operatorcode = response.contracts[0].operatorCode</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def userinfo = result.userInfo</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def idmtoken = result.idmToken</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = 'Bearer ' + resultContract.idmtoken + '@' + resultContract.operatorcode + resultContract.contractnumber</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header X-Application-Key = gwappkey</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header origin = 'API'</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url portabilityUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_4086392109.html">@phone</a>
+      </div>
+
+  
+  <span class="lead-duration duration">3.511</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validar cria&ccedil;&atilde;o de portabilidade</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def body =</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>{
+    &quot;mobileOperatorIdentifier&quot;: 81,
+    &quot;cellphoneNumber&quot;: 11970707171,
+    &quot;netPhoneNumber&quot;: 11970707172,
+    &quot;isHolder&quot;: true,
+    &quot;clientIP&quot;: &quot;192.0.0.1&quot;,
+    &quot;clientEmail&quot;: &quot;teste@teste.com&quot;,
+    &quot;clientName&quot;: &quot;Name Test&quot;,
+    &quot;requestURI&quot;: &quot;a&quot;,
+    &quot;username&quot;: &quot;Tester&quot;,
+    &quot;cityId&quot;: 81
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseApi =</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>{
+  protocolNumber: &quot;#string&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'phone'</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request body</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">3.506</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>13:32:11.931 request:
+1 &gt; POST https://qa-gw.claro.com.br/resource-order-portability/v1/phone
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer 7d1a98ac50d30d0e@052019181308
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 235
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: qa-gw.claro.com.br
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 &gt; X-Application-Key: e9e24b40c78e013762d7000d3ac06d76
+1 &gt; origin: API
+{&quot;mobileOperatorIdentifier&quot;:81,&quot;cellphoneNumber&quot;:11970707171,&quot;netPhoneNumber&quot;:11970707172,&quot;isHolder&quot;:true,&quot;clientIP&quot;:&quot;192.0.0.1&quot;,&quot;clientEmail&quot;:&quot;teste@teste.com&quot;,&quot;clientName&quot;:&quot;Name Test&quot;,&quot;requestURI&quot;:&quot;a&quot;,&quot;username&quot;:&quot;Tester&quot;,&quot;cityId&quot;:81}
+
+13:32:15.434 response time in milliseconds: 3499,60
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Server: ECD (spb/E516)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Policy: 200205-02
+1 &lt; cache-control: no-store, max-age=0
+1 &lt; date: Wed, 12 Feb 2020 15:32:15 GMT
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: accept-encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: DENY
+1 &lt; x-request-id: 764699644fa4b63293f20e285e8d59b3ab48a34ce06c811cfe872f3c3310990b
+1 &lt; x-xss-protection: 1; mode=block
+{&quot;protocolNumber&quot;:&quot;052202590592431&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == responseApi</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+11:04:06.871 >> lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+11:04:08.162 << lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')
+11:04:08.180 request:
+1 > POST https://qa-gw.claro.com.br/resource-order-portability/v1/phone
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer feb957842e3f2e95@003349338695
+1 > Connection: Keep-Alive
+1 > Content-Length: 240
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: e9e24b40c78e013762d7000d3ac06d76
+1 > origin: API
+{"mobileOperatorIdentifier":"AAA","cellphoneNumber":11970707171,"netPhoneNumber":11970707172,"isHolder":true,"clientIP":"192.0.0.1","clientEmail":"teste@teste.com","clientName":"Name Test","requestURI":"a","username":"Tester","cityId":"81"}
+
+11:04:12.490 response time in milliseconds: 4305,86
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Server: ECD (spb/E516)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: no-store, max-age=0
+1 < date: Tue, 11 Feb 2020 13:04:11 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: 4396b83318bb56256684ca4d9b7e658df41efd8bd66586593d2478faae0d5b5f
+1 < x-xss-protection: 1; mode=block
+{"protocolNumber":"003204431070601"}
+
+11:04:12.493 status code was: 200, expected: 400, response time: 4306, url: https://qa-gw.claro.com.br/resource-order-portability/v1/phone, response: {"protocolNumber":"003204431070601"}
+validFormatException: Cannot deserialize value of type `java.lang.Long` from String \"aaa\": not a valid Long value\n at [Source: (PushbackInputStream); line: 1, column: 233] (through reference chain: com.claro.ecare.api.portability.dto.RequestPhonePortabilityDTO[\"cityId\"])"}
+
+11:02:39.879 assertion failed: path: $.description, actual: 'JSON parse error: Cannot deserialize value of type `java.lang.Long` from String "aaa": not a valid Long value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Long` from String "aaa": not a valid Long value
+ at [Source: (PushbackInputStream); line: 1, column: 233] (through reference chain: com.claro.ecare.api.portability.dto.RequestPhonePortabilityDTO["cityId"])', expected: 'cityId: Parâmetro ausente ou fora do padrão!', reason: not equal

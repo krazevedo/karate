@@ -1,0 +1,15 @@
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/backend/inventory/InventoryRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/backend/piracy/PiracyRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/backend/security/SecurityRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/claroApp/utils/UtilsRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/claroApp/user/UserRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/backend/portability/PortabilityRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/claroApp/ClaroAppTest.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/claroApp/financial/FinancialRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/backend/franchise/FranchiseRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/claroApp/utils/ParseHTML.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/backend/ombudsman/OmbudsmanRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/claroApp/authentication/AuthenticationRunner.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/backend/BackendTest.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/backend/DecodeJWT.java
+/home/kaio.azevedo/Claro/claro-app-automation-test-api/src/test/java/claroApp/technician/TechnicianRunner.java

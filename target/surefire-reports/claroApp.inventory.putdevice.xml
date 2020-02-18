@@ -1,0 +1,19 @@
+<testsuite failures="1" name="claroApp/inventory/putdevice.feature" skipped="0" tests="1" time="8.467815">
+  <testcase classname="claroApp.inventory.putdevice" name="Validar edição de dispositivo" time="8.467815">
+    <failure message="putdevice.feature:26 - status code was: 405, expected: 204, response time: 951, url: https://qa-gw.claro.com.br/resource-inventory/v1/device-management, response: {&quot;statusCode&quot;:&quot;405&quot;,&quot;status&quot;:&quot;Method Not Allowed&quot;,&quot;description&quot;:&quot;Request method 'PUT' not supported&quot;}">* def result = callonce read('../../claroApp/authentication/signin.feature@login') . passed
+* header Authorization = 'Bearer ' + result.idmToken ...................... passed
+* header X-Application-Key = xappkey ...................................... passed
+* header Content-type = 'application/json' ................................ passed
+* url inventoryUrl ........................................................ passed
+* def body = .............................................................. passed
+* header document = document .............................................. passed
+Given path 'device-management' ............................................ passed
+And request body .......................................................... passed
+When method put ........................................................... passed
+Then status 204 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: putdevice.feature:26 - status code was: 405, expected: 204, response time: 951, url: https://qa-gw.claro.com.br/resource-inventory/v1/device-management, response: {"statusCode":"405","status":"Method Not Allowed","description":"Request method 'PUT' not supported"}
+	at ✽.Then status 204 (putdevice.feature:26)</failure>
+  </testcase>
+</testsuite>

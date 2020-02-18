@@ -1,0 +1,20 @@
+<testsuite failures="1" name="claroApp/utils/fuzz.feature" skipped="0" tests="1" time="0.346365">
+  <testcase classname="claroApp.utils.fuzz" name="Validar saúde da API" time="0.346365">
+    <failure message="fuzz.feature:35 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1] failed: Conexão recusada (Connection refused)">* header Content-Type = 'application/x-www-form-urlencoded' ............... passed
+* cookies {sessions: '%7B%7D', _Fuzzer-app_session: 'WFM4dFVOV1BkQXlnRUk0enRaa2VEUEo4aTlKZW5mZWpNcXhSM0RyVVJNWWI3bzB1RDZ2MmxJZS83V2JpK1FUcEpjNThMem5Hc2NwZjA2YTdmdnlTQ1NmbEtyQnhnY0xvbnFTSDJaODlXR2M2cUxVeGJFdU9PSktuRWk1NHFUaDVBRTkyNjBUamRDTHZRTEFLMTF6cEZ3enBTdGF5YWRobGJSUk00LzNGU1ZHeTVWZHNkRWhtMVNTaW1iaUExRU0vajI4V09UVGwyTXNOUUJRdVJhbjluSWlRV1FPcGM4Q05OVTR1UXlFQ1hGTT0tLURBRnlHaTQySnNScHdSbVpYSllTWXc9PQ%3D%3D--304969adcb2836e9f8637df442812c69c2face4c'} . passed
+* def scan = .............................................................. passed
+* def formdata = .......................................................... passed
+Given url 'http://localhost:3000/scans' ................................... passed
+And form fields formdata .................................................. passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: fuzz.feature:35 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1] failed: Conexão recusada (Connection refused)
+	at ✽.When method post (fuzz.feature:35)
+
+Then status 200 ........................................................... skipped
+And def scannumber = scan(response) ....................................... skipped
+And print "******* RUN SCAN NUMBER: " + scannumber ........................ skipped</failure>
+  </testcase>
+</testsuite>

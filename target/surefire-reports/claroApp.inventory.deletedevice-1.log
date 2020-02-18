@@ -1,0 +1,27 @@
+12:09:36.217 >> lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+12:09:39.005 << lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')
+12:09:39.019 request:
+1 > DELETE https://qa-gw.claro.com.br/resource-inventory/v1/device-management/ZDA6YzU6ZjM6NGU6OGY6OTU=
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 54965313177fb57f
+1 > Connection: Keep-Alive
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: 2251d8c0a94601364c54000d3ac06d76
+1 > document: 36512468848
+
+12:09:41.350 response time in milliseconds: 2329,49
+1 < 204
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/octet-stream
+1 < Server: ECD (spb/E516)
+1 < X-Policy: 200123-03
+1 < cache-control: no-store, max-age=0
+1 < date: Mon, 27 Jan 2020 14:09:39 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: 230a5140f1c1f5f35383ec8aa4d7ec9fcc3ac591ab455175f95c98b43ddbe65d
+1 < x-xss-protection: 1; mode=block
+

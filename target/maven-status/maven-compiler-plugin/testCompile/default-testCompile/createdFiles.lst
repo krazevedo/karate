@@ -1,0 +1,15 @@
+backend/ombudsman/OmbudsmanRunner.class
+backend/portability/PortabilityRunner.class
+claroApp/authentication/AuthenticationRunner.class
+claroApp/user/UserRunner.class
+backend/piracy/PiracyRunner.class
+backend/security/SecurityRunner.class
+claroApp/utils/ParseHTML.class
+backend/BackendTest.class
+backend/inventory/InventoryRunner.class
+backend/DecodeJWT.class
+claroApp/technician/TechnicianRunner.class
+claroApp/ClaroAppTest.class
+claroApp/utils/UtilsRunner.class
+claroApp/financial/FinancialRunner.class
+backend/franchise/FranchiseRunner.class

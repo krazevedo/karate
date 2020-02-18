@@ -1,0 +1,35 @@
+13:07:23.920 >> lock acquired, begin callonce: read('../../claroApp/user/contractlist.feature@list')
+13:07:29.001 << lock released, cached callonce: read('../../claroApp/user/contractlist.feature@list')
+13:07:29.035 request:
+1 > GET https://dev-gw.claro.com.br/security/v1/generate-token-by-userinfo/sms
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dev-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > contract-number: 112778101
+1 > operator-code: 003
+1 > partner-account: NETAPPNOVO
+1 > user-info: 0eD997s4wsJwG1uvOJ9m0YgLfDbC3Qh8+Gtt/3Mam1DSnkHZ0sur3Lr9Ps+qu4mQVjm4wk3+qPc7alSL9iycCnzgVWwC7fOKt64Rf78hG40ci8iOP68qArbGduOmhmXoS92Ce5+omhM3XHFjUWYs8J+1SlP6E8tzgjcxwU9Iaxjj+N8GmLwDu5VDy505qqV5WzvHRmG2MODnDhC2U/Tvpcp1UgW8awzVttSInkGPAajUJ1DMGR/ZvvZXsVRYuiogGx+1Gx399Pcxzor/M+jNJVAzJQM+Kv3kamFYpSloxw+bDTpJbw208SmPTsTZTN7FsnekPqkEUtyOkJ10Mlb+88l3WWjtIy8JU6djGgdY/kPmQpbS5obFLsXwtz/PI5lPwDb5im8VQ+ErND6aYjJDnfjq2SZBrQWZOD+bauaFGNY3IeOaZw08Or/495EscguYTnMlSwCoccAKLWzNcIgXgA==
+1 > x-application-key: 2251d8c0a94601364c54000d3ac06d76
+
+13:07:35.127 response time in milliseconds: 6088,99
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json;charset=utf-8
+1 < Server: ECD (spb/E563)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: public, max-age=18000
+1 < date: Mon, 10 Feb 2020 15:07:35 GMT
+1 < strict-transport-security: max-age=15768000
+1 < vary: Accept-Encoding, User-Agent,accept-encoding
+1 < x-cache: MISS
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: 62e8034bd98adf377a8663b4f8c3a8ff6bd17acec2c7a9a1793f5ccac9ae2f46
+1 < x-xss-protection: 1; mode=block
+{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmb3JtYVBhZ2FtZW50byI6IkRFQklUTyBFTSBDT05UQSIsInJvbGUiOiJVU0VSIiwiY29kaWdvT3BlcmFkb3JhIjoiMDAzIiwidHZEaWdpdGFsIjp0cnVlLCJsb2dpbiI6IjQ2MTY4OTA3NzM0IiwiZGlhVmVuY2ltZW50byI6MTAsInBhcnRuZXJBY2NvdW50IjoiTkVUQVBQTk9WTyIsImNvZGlnb05ldCI6IjAwMzExMjc3ODEwMSIsInBlcmZpbENsaWVudGUiOjI2OTAsImNwZiI6IjQ2MTY4OTA3NzM0IiwidGlwb0NvbnRyYXRvIjoxLCJjdXN0b21lck5ldFVubyI6ZmFsc2UsImV4cCI6MTU4MTM2ODg1NSwiZGF0YUNhZGFzdHJvIjo4MTA4NjQwMDAwMDAsImVtYWlsIjoiam9zZWF1Z3VzdG9wZXJyb3R0YUBnbWFpbC5jb20iLCJzZWdtZW50b0NsaWVudGUiOiJQVVJQTEUiLCJzdGF0dXNDb250cmF0byI6IjEiLCJ0aXBvU2VnbWVudG9DbGllbnRlIjoiMTAiLCJjb250cmF0byI6IjExMjc3ODEwMSIsIm5vbWUiOiJKT1NFIEFVR1VTVE8gUEVSUk9UVEEiLCJzdGF0dXNBZGltcGwiOiJ0cnVlIiwibm9kZSI6IkJVVEpBIiwidHZBbmFsb2dpYyI6ZmFsc2UsInBob25lIjp0cnVlLCJicm9hZGJhbmQiOnRydWUsImNvZENpZGFkZU5ldCI6Ijg4NDEyIiwiY29kaWdvSW1vdmVsIjo1MDAwMjA4NzcsInN0YXR1c0NvbnRyYXRvRGVzY3JpY2FvIjoiQ09ORUNUQURPIiwic3JzY2FpZHN0YXR1cyI6MX0.mgrM59NukEE6FfBniMDlA1OE2b663Ix22hh9ye3lCNY"}
+
+pBIiwic3RhdHVzQWRpbXBsIjoidHJ1ZSIsIm5vZGUiOiJGMTA3IiwidHZBbmFsb2dpYyI6ZmFsc2UsInBob25lIjp0cnVlLCJicm9hZGJhbmQiOnRydWUsImNvZENpZGFkZU5ldCI6IjA1NTA5IiwiY29kaWdvSW1vdmVsIjozNjYxMzA4MjEsInN0YXR1c0NvbnRyYXRvRGVzY3JpY2FvIjoiQ09ORUNUQURPIiwic3JzY2FpZHN0YXR1cyI6MX0.Ns48ntgTYye-CsAU72-bmgkYkCeqU8WoF0Yl2QHBCRY"}
+

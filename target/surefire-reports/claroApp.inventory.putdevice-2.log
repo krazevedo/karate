@@ -1,0 +1,35 @@
+11:33:38.330 >> lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+11:33:39.767 << lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')
+11:33:39.789 request:
+1 > PUT https://qa-gw.claro.com.br/resource-inventory/v1/device-management
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer b517305cd1f6d6ec
+1 > Connection: Keep-Alive
+1 > Content-Length: 64
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: 2251d8c0a94601364c54000d3ac06d76
+1 > document: suhisauhdiduhiaudsh
+{"deviceId":"MDA6MDU6MTY6NTk6ZjE6NjM%3D","deviceName":"Windows"}
+
+11:33:40.694 response time in milliseconds: 903,75
+1 < 405
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json;charset=utf-8
+1 < Server: ECD (spb/E4A2)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < allow: PATCH, GET
+1 < cache-control: no-store, max-age=0
+1 < date: Mon, 10 Feb 2020 13:33:40 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: b57180f81f747267f44139635eaa113ff0e82d042ff6deff110694813cca06b6
+1 < x-xss-protection: 1; mode=block
+{"statusCode":"405","status":"Method Not Allowed","description":"Request method 'PUT' not supported"}
+
+11:33:40.695 status code was: 405, expected: 404, response time: 904, url: https://qa-gw.claro.com.br/resource-inventory/v1/device-management, response: {"statusCode":"405","status":"Method Not Allowed","description":"Request method 'PUT' not supported"}

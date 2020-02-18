@@ -1,0 +1,31 @@
+11:34:27.855 >> lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+11:34:29.165 << lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')
+11:34:29.186 request:
+1 > GET https://qa-gw.claro.com.br/resource-inventory/v1/device-management
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 9ddb83b35221726
+1 > Connection: Keep-Alive
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: 2251d8c0a94601364c54000d3ac06d76
+1 > document: adasdasdasdassdsa
+
+11:34:30.974 response time in milliseconds: 1784,32
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json;charset=utf-8
+1 < Server: ECD (spb/E4A2)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: no-store, max-age=0
+1 < date: Mon, 10 Feb 2020 13:34:30 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: e7e58690058f58e62c75cccef0ec665398df3933062276a702686ec5ef7f30eb
+1 < x-xss-protection: 1; mode=block
+[{"deviceName":"OS X","deviceId":"ZWM6MmM6ZTI6YmM6YTM6MWY%3D","expirationDate":"2020-02-13T23:50:22Z","creationDate":"2019-11-13T23:50:24Z","browserName":"Apple Mail"},{"deviceName":"iOS","deviceId":"NmM6ZTg6NWM6NDA6NTg6OTg%3D","expirationDate":"2020-02-17T14:35:53Z","creationDate":"2019-11-17T14:35:54Z","browserName":"Mobile Safari"}]
+
+11:34:30.981 status code was: 200, expected: 404, response time: 1784, url: https://qa-gw.claro.com.br/resource-inventory/v1/device-management, response: [{"deviceName":"OS X","deviceId":"ZWM6MmM6ZTI6YmM6YTM6MWY%3D","expirationDate":"2020-02-13T23:50:22Z","creationDate":"2019-11-13T23:50:24Z","browserName":"Apple Mail"},{"deviceName":"iOS","deviceId":"NmM6ZTg6NWM6NDA6NTg6OTg%3D","expirationDate":"2020-02-17T14:35:53Z","creationDate":"2019-11-17T14:35:54Z","browserName":"Mobile Safari"}]

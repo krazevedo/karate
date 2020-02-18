@@ -1,0 +1,37 @@
+14:13:32.736 >> lock acquired, begin callonce: read('../../claroApp/authentication/signin.feature@login')
+14:13:34.772 << lock released, cached callonce: read('../../claroApp/authentication/signin.feature@login')
+14:13:34.800 request:
+1 > POST https://qa-gw.claro.com.br/resource-order-portability/v1/phone
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer e079fef13d647875@003349338695
+1 > Connection: Keep-Alive
+1 > Content-Length: 235
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-gw.claro.com.br
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.2)
+1 > X-Application-Key: e9e24b40c78e013762d7000d3ac06d76
+1 > origin: API
+{"mobileOperatorIdentifier":81,"cellphoneNumber":11970707171,"netPhoneNumber":11970707172,"isHolder":true,"clientIP":"192.0.0.1","clientEmail":"teste@teste.com","clientName":"Name Test","requestURI":"a","username":"Tester","cityId":81}
+
+14:13:38.038 response time in milliseconds: 3233,08
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Server: ECD (spb/E516)
+1 < Transfer-Encoding: chunked
+1 < X-Policy: 200205-02
+1 < cache-control: no-store, max-age=0
+1 < date: Tue, 11 Feb 2020 16:13:37 GMT
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: accept-encoding
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: DENY
+1 < x-request-id: 4c54f7af20c6e511591b6f80f1edb3d072cdc091964a1d11728ab989c763f0ba
+1 < x-xss-protection: 1; mode=block
+{"protocolNumber":"003204431369847"}
+
+st","description":"requestURI: Parâmetro ausente ou fora do padrão!"}
+
+15:28:07.139 status code was: 400, expected: 200, response time: 1182, url: https://qa-gw.claro.com.br/resource-order-portability/v1/phone, response: {"statusCode":"400","status":"Bad Request","description":"requestURI: Parâmetro ausente ou fora do padrão!"}
+ne, response: {"statusCode":401,"error":"Unauthorized","message":"Bad Response From Token Introspection Endpoint","attributes":{"error":"Bad Response From Token Introspection Endpoint"}}

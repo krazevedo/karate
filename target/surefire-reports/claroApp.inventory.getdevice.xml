@@ -1,0 +1,16 @@
+<testsuite failures="1" name="claroApp/inventory/getdevice.feature" skipped="0" tests="1" time="3.127776">
+  <testcase classname="claroApp.inventory.getdevice" name="Validar erro ao enviar documento inválido" time="3.127776">
+    <failure message="getdevice.feature:44 - status code was: 200, expected: 404, response time: 1784, url: https://qa-gw.claro.com.br/resource-inventory/v1/device-management, response: [{&quot;deviceName&quot;:&quot;OS X&quot;,&quot;deviceId&quot;:&quot;ZWM6MmM6ZTI6YmM6YTM6MWY%3D&quot;,&quot;expirationDate&quot;:&quot;2020-02-13T23:50:22Z&quot;,&quot;creationDate&quot;:&quot;2019-11-13T23:50:24Z&quot;,&quot;browserName&quot;:&quot;Apple Mail&quot;},{&quot;deviceName&quot;:&quot;iOS&quot;,&quot;deviceId&quot;:&quot;NmM6ZTg6NWM6NDA6NTg6OTg%3D&quot;,&quot;expirationDate&quot;:&quot;2020-02-17T14:35:53Z&quot;,&quot;creationDate&quot;:&quot;2019-11-17T14:35:54Z&quot;,&quot;browserName&quot;:&quot;Mobile Safari&quot;}]">* def result = callonce read('../../claroApp/authentication/signin.feature@login') { username: 'thiagoflc',  password: 'tfmpif#NET9'} . passed
+* header Authorization = 'Bearer ' + result.idmToken ...................... passed
+* header X-Application-Key = xappkey ...................................... passed
+* url inventoryUrl ........................................................ passed
+* header document = 'adasdasdasdassdsa' ................................... passed
+Given path 'device-management' ............................................ passed
+When method get ........................................................... passed
+Then status 404 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getdevice.feature:44 - status code was: 200, expected: 404, response time: 1784, url: https://qa-gw.claro.com.br/resource-inventory/v1/device-management, response: [{"deviceName":"OS X","deviceId":"ZWM6MmM6ZTI6YmM6YTM6MWY%3D","expirationDate":"2020-02-13T23:50:22Z","creationDate":"2019-11-13T23:50:24Z","browserName":"Apple Mail"},{"deviceName":"iOS","deviceId":"NmM6ZTg6NWM6NDA6NTg6OTg%3D","expirationDate":"2020-02-17T14:35:53Z","creationDate":"2019-11-17T14:35:54Z","browserName":"Mobile Safari"}]
+	at ✽.Then status 404 (getdevice.feature:44)</failure>
+  </testcase>
+</testsuite>

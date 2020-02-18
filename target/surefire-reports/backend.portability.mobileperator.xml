@@ -1,0 +1,13 @@
+<testsuite failures="0" name="backend/portability/mobileperator.feature" skipped="0" tests="1" time="0.469514">
+  <testcase classname="backend.portability.mobileperator" name="Validar erro ao enviar método post" time="0.469514">
+    <system-out>* header X-Application-Key = gwappkey ..................................... passed
+* url portabilityUrl ...................................................... passed
+* def responseApi = ....................................................... passed
+Given path 'mobile-operators' ............................................. passed
+And param cityId = '1' .................................................... passed
+And request {} ............................................................ passed
+When method post .......................................................... passed
+Then status 405 ........................................................... passed
+And match response == responseApi ......................................... passed</system-out>
+  </testcase>
+</testsuite>
